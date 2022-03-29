@@ -1,0 +1,130 @@
+.section {
+
+    &__collection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.collection {  
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        @media (max-width: 575.98px) {   
+            flex-direction: column;
+
+        }
+    }
+
+    &__title {
+        letter-spacing: 0.7px;
+    }
+
+    &__btn {
+        max-width: 242px;
+        width: 100%;
+    }
+
+    &__slider {
+        display: flex;
+        max-width: 1200px;
+        margin-top: 56px;
+        @media (max-width: 991.98px) {          
+            max-width: 991px;
+        }
+        @media (max-width: 575.98px) {          
+            max-width: 750px;
+        }
+    }
+
+    &__item {
+        padding: 24px;
+        margin: 0 15px;
+
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 24px;
+        @media (max-width: 575.98px) {          
+            padding: 10px;
+        }
+    }
+
+    &__collage {
+        @media (max-width: 991.98px) {          
+            max-width: 300px;
+        }
+        &-wrapper {
+            max-width: 322px;
+            max-height: 322px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        @media (max-width: 991.98px) {          
+            margin-top: 10px;
+        }
+    }
+
+    &__avatar {
+        width: 56px;
+            @media (max-width: 991.98px) {          
+                width: 42px;
+            }
+    }
+
+    &__text {
+        margin-left: 12px;
+        width: 100%;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        @media (max-width: 991.98px) {          
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    &__by {
+        color: #8393AF;
+        @media (max-width: 991.98px) {          
+            font-size: 12px;
+            line-height: 18px;
+        }
+        span {
+            @media (max-width: 991.98px) {          
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+        
+    }
+
+    &__like {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 24px;
+            margin-bottom: 4px;
+            @media (max-width: 991.98px) {          
+                width: 20px;
+            }
+        }
+        span {
+            
+            @media (max-width: 991.98px) {          
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
